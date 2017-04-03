@@ -1,0 +1,31 @@
+body {
+    font-family: $base-font-family;
+    font-weight:$base-font-weight;
+    font-size: 1.5rem;
+    line-height: $base-line-height;
+}
+
+.nav-main {
+    padding: 20px;
+    background: #ddd;
+}
+
+.header-main {
+    padding: 20px;
+    background: #ccc;
+}
+
+.section-slider {
+    padding: 20px;
+    background: #bbb;
+}
+
+.section-ctas {
+    padding: 20px;
+    background: #aaa;
+}
+
+.footer-main {
+    padding: 20px;
+    background: #999;
+}

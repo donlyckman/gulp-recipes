@@ -1,0 +1,92 @@
+@mixin fn-flex-column {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+@mixin fn-flex-row-outer {
+    flex-flow: row nowrap;
+}
+@mixin fn-flex-row-inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width:100%;
+    max-width: $fn-max-width;
+}
+
+.fn-100 {
+    @include fn-flex-column;
+}
+
+.fn-70-30 {
+    @include fn-flex-column;
+}
+
+.fn-30-70 {
+    @include fn-flex-column;
+}
+
+.fn-50-50 {
+    @include fn-flex-column;
+}
+
+.fn-33-33-33 {
+    @include fn-flex-column;
+}
+
+.fn-25-25-25-25 {
+    @include fn-flex-column;
+}
+@media screen and (min-width:30rem) {}
+@media screen and (min-width:64rem) {
+    .fn-100 {
+        @include fn-flex-row-outer;
+
+        > div {
+            @include fn-flex-row-inner;
+            justify-content: center;
+        }
+    }
+
+    .fn-70-30 {
+        @include fn-flex-row-outer;
+
+        > div {
+            @include fn-flex-row-inner;
+        };
+    }
+
+    .fn-30-70 {
+        @include fn-flex-row-outer;
+
+        > div {
+            @include fn-flex-row-inner;
+        }
+    }
+
+    .fn-50-50 {
+        @include fn-flex-row-outer;
+
+        > div {
+            @include fn-flex-row-inner;
+        }
+    }
+
+    .fn-33-33-33 {
+        @include fn-flex-row-outer;
+
+        > div {
+            @include fn-flex-row-inner;
+        }
+    }
+
+    .fn-25-25-25-25 {
+        @include fn-flex-row-outer;
+
+        > div {
+            @include fn-flex-row-inner;
+        }
+    }
+}
