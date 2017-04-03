@@ -1,7 +1,7 @@
 # gulp-recipes
 Various gulp starter projects
 
-|### js-babel | Compiles js files using babel |
+|Alt-H1 js-babel | Compiles js files using babel |
 |---------|------------------------------------|
 
 ### js-only
