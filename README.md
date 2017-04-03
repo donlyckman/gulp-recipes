@@ -8,4 +8,4 @@ Various gulp starter projects
 | sass-only | Compiles, concats, minify and add source maps to sass files|
 | split-tasks | Loads gulp tasks from external files|
 |spritesmith|Builds a sprite image and css file for a series of images|
-|task-args|Passes arguments to gulp task using yargs and gulp-if|
+|task-args|Passes arguments to gulp tasks using yargs and gulp-if|
