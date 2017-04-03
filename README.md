@@ -9,4 +9,3 @@ Various gulp starter projects
 | split-tasks | Loads gulp tasks from external files|
 |spritesmith|Builds a sprite image and css file for a series of images|
 |task-args|Passes arguments to gulp task using yargs and gulp-if|
-|---------|------------------------------------|
