@@ -5,10 +5,10 @@ Various gulp starter projects
 Compiles js files using babel
 
 ### js-only
-Compiles, concats, minify and addd source maps to js
+Compiles, concats, minify and add source maps to js
 
 ### sass-only
-Compiles, concats, minify and addd source maps to sass files
+Compiles, concats, minify and add source maps to sass files
 
 ### split-tasks
 Loads gulp tasks from external files
