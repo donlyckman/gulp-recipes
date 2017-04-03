@@ -3,6 +3,7 @@ Various gulp starter projects
 
 |Project | Description |
 |---------|------------------------------------|
+|ftp-upload | Uploads files to ftp server |
 |js-babel | Compiles js files using babel |
 |js-only | Compiles, concats, minify and add source maps to js|
 | sass-only | Compiles, concats, minify and add source maps to sass files|
