@@ -1,0 +1,64 @@
+$knife: -0px -0px 40px 40px;
+$avalanche: -0px -40px 40px 40px;
+$flood: -0px -80px 40px 40px;
+$forest-fire: -0px -120px 40px 40px;
+$hail: -0px -160px 40px 40px;
+$fire: -0px -200px 40px 40px;
+$meteor: -0px -240px 40px 40px;
+$pistol: -0px -280px 40px 40px;
+$tornado: -0px -320px 40px 40px;
+$volcano: -0px -360px 40px 40px;
+$earthquake: -0px -400px 40px 40px;
+$social-blinklist: -0px -440px 72px 72px;
+$social-buzz: -0px -512px 72px 72px;
+$social-delicious: -0px -584px 72px 72px;
+$social-designfloat: -0px -656px 72px 72px;
+$social-devmarks: -0px -728px 72px 72px;
+$social-digg: -0px -800px 72px 72px;
+$social-twitter: -0px -872px 72px 72px;
+$social-email: -0px -944px 72px 72px;
+$social-facebook: -0px -1016px 72px 72px;
+$social-google: -0px -1088px 72px 72px;
+$social-izeby: -0px -1160px 72px 72px;
+$social-linkedin: -0px -1232px 72px 72px;
+$social-misterwong: -0px -1304px 72px 72px;
+$social-mixx: -0px -1376px 72px 72px;
+$social-myspace: -0px -1448px 72px 72px;
+$social-newsvine: -0px -1520px 72px 72px;
+$social-reddit: -0px -1592px 72px 72px;
+$social-rss: -0px -1664px 72px 72px;
+$social-script-and-style: -0px -1736px 72px 72px;
+$social-stumbleupon: -0px -1808px 72px 72px;
+$social-technorati: -0px -1880px 72px 72px;
+$social-tipd: -0px -1952px 72px 72px;
+$social-tumblr: -0px -2024px 72px 72px;
+$social-diigo: -0px -2096px 72px 72px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 3);
+}
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 4);
+}
+@function sprite-width($sprite) {
+   @return nth($sprite, 3);
+}
+@function sprite-height($sprite) {
+   @return nth($sprite, 4);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 1);
+  $sprite-offset-y: nth($sprite, 2);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+@mixin sprite($sprite, $display: block) {
+   @include sprite-position($sprite);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: $display;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.icon {
+  background-image: url('../images/sprite.png');
+}
